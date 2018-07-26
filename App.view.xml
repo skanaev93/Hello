@@ -1,0 +1,59 @@
+<mvc:View
+  controllerName="HelloWorld.App"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:f="sap.ui.layout.form"
+>
+<App class="myAppDemoWT" id="app">
+  
+  
+
+  <Page>
+
+   <List
+    
+    headerText="Products"
+    items="{user>/data}"
+	mode="SingleSelectMaster" 
+	selectionChange="onRequestSelect"
+
+   >
+    <items>
+      <ObjectListItem title="{user>name}"
+				
+				type="Navigation"
+				press="onPress">
+				
+
+      	<firstStatus>
+		<ObjectStatus text="{user>id}"/>
+		</firstStatus>
+    	</ObjectListItem>
+    </items>
+  </List>
+      <Button
+        id="helloButton"
+        type="Emphasized"
+        icon="sap-icon://sap-ui5"
+        text="getData"
+        press="onShowHello"
+        class="sapUiSmallMargin"/>
+
+        <f:SimpleForm>
+            <f:content>
+                <Label text="Название"/>
+                <Input id="inputName" value="{user>/bind}" width="10rem"/>
+            </f:content>
+        </f:SimpleForm>
+
+         <Button
+        id="changeButton"
+        type="Accept"
+        icon="sap-icon://sap-ui5"
+        text="Change"
+        press="onChange"
+        class="sapUiSmallMargin"/>
+
+    </Page>
+</App>
+</mvc:View>
