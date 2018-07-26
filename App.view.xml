@@ -38,7 +38,7 @@
         text="getData"
         press="onShowHello"
         class="sapUiSmallMargin"/>
-
+skldfmsldmf;lsd,f;lsd,f,sdf,
         <f:SimpleForm>
             <f:content>
                 <Label text="Название"/>
@@ -53,7 +53,7 @@
         text="Change"
         press="onChange"
         class="sapUiSmallMargin"/>
-
+jsdfnsldfksdmfkmsd;lf,sd
     </Page>
 </App>
 </mvc:View>
